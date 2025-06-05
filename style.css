@@ -44,6 +44,7 @@ button {
   border-radius: 8px;
   width: 100%;
   cursor: pointer;
+  margin-top: 0.5rem;
 }
 
 .success {
