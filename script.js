@@ -70,7 +70,7 @@ form.addEventListener("submit", async (e) => {
     obs: data.get("obs")
   }));
 
-  const webhook = "https://script.google.com/macros/s/AKfycby1h7iYNV1R0TqNo1ZRwGAd1h01-GrcyXPDn4M_G0FfvN7Jl-RXfTPdGDrX4cbqb7O4/exec";
+  const webhook = "https://script.google.com/macros/s/AKfycbwN99_eLFn7pfuEmT5yD-y5VjXxZEQmHS9owrl31QtF_e9FN7hIhQD1iiXmdFhF-dkA/exec";
 
   try {
     const res = await fetch(webhook, {
