@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pedido de Bebidas – T Group</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
 </head>
 <body>
   <main>
@@ -25,7 +24,9 @@
       </select>
 
       <label>Nome do Evento</label>
-      <input type="text" name="evento" required />
+      <select name="evento" id="evento" required>
+        <option value="">Carregando eventos...</option>
+      </select>
 
       <label>Data do Evento</label>
       <input type="date" name="data_evento" required />
@@ -33,11 +34,18 @@
       <label>Produtor Responsável</label>
       <input type="text" name="produtor" required />
 
-      <label>Bebida Solicitada</label>
-      <input type="text" name="bebida" required />
+      <div id="bebidas">
+        <div class="bebida-item">
+          <label>Bebida Solicitada</label>
+          <select name="bebida[]" class="bebida-select" required>
+            <option value="">Carregando bebidas...</option>
+          </select>
+          <label>Quantidade</label>
+          <input type="number" name="quantidade[]" required />
+        </div>
+      </div>
 
-      <label>Quantidade</label>
-      <input type="number" name="quantidade" required />
+      <button type="button" id="addBebida">+ Adicionar outra bebida</button>
 
       <label>Observações</label>
       <textarea name="obs" rows="3"></textarea>
